@@ -1,20 +1,22 @@
 // Prendo gli elementi dal DOM
 const userWord= document.getElementById('pali');
-const userDice=document.getElementById('dice');
+const userThrow=document.getElementById('throw');
 const wordBtn =document.getElementById('pali-btn');
 const throwBtn =document.getElementById('throw-btn');
 const stampWord=document.getElementById('word')
-
+const evenOdd=document.getElementById('even-odd')
 
 
 wordBtn.addEventListener('click',function(){
-    console.log('ciao')
     reverseWord(userWord.value)
 })
 
 
 
 
-// diceBtn.addEventListener('click',function(){
-
-// })
+throwBtn.addEventListener('click',function(){
+    const pcThrow=Math.floor(Math.random() * 5 +1)
+    let sum= userThrow + pcThrow
+    console.log(userThrow.value,pcThrow)    
+    
+})

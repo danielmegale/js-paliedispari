@@ -1,8 +1,8 @@
 // Funzione Parole al contrario
-function reverseWord(reverseWord){
+function reverseWord(Word){
 
     let result='';
-    const reverse=reverseWord.toLowerCase();
+    const reverse=Word.toLowerCase();
     for(let i= reverse.length-1; i>=0 ; i--){
         console.log(reverse.charAt(i)); 
         result+=reverse.charAt(i);
